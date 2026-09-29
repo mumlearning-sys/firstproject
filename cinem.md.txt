@@ -1,0 +1,1261 @@
+# CASA
+
+## 80-SECOND PRODUCT LAUNCH FILM
+
+**Product:** CASA — Conversational Agentic System for Analytics
+**Total duration:** 80 seconds
+**Structure:** 4 Acts / 8 Scenes
+**Format:** 16:9 widescreen
+**Style:** Premium enterprise technology launch film
+**Human presence:** Act 1 only
+**Narration:** One consistent off-screen narrator throughout
+**Character dialogue:** None
+**Brand reveal:** Final scene only
+
+---
+
+# 1. LOCKED STORY
+
+### ACT 1 — THE PROBLEM
+
+**0–20 seconds**
+
+Customer problem → transaction declined → mobile banking app → initiate chat → type question.
+
+### ACT 2 — THE SCALE
+
+**20–45 seconds**
+
+One conversation → millions of conversations → AI-ready data.
+
+### ACT 3 — THE INTELLIGENCE
+
+**45–65 seconds**
+
+Reporting/monitoring → natural-language question → billing address mismatch.
+
+### ACT 4 — THE PRODUCT
+
+**65–80 seconds**
+
+Enrich → Monitor → Explore → CASA.
+
+---
+
+# 2. MASTER VISUAL PROMPT
+
+Use this as the global visual foundation for every image and video generation.
+
+```text
+Create a premium cinematic enterprise technology launch film for a banking conversational analytics product.
+
+The film must feel sophisticated, modern, realistic, intelligent and emotionally engaging, but never exaggerated or science-fiction-like.
+
+Visual style:
+premium product launch film, realistic commercial cinematography, sophisticated enterprise technology, natural lighting, controlled contrast, cinematic depth of field, subtle camera movement, realistic materials, believable banking technology, elegant composition, restrained visual effects.
+
+The visual storytelling must always be clear and economical. Every shot communicates one idea. Never overcrowd the frame.
+
+16:9 widescreen composition designed for a large presentation screen.
+
+Do not use futuristic holograms, cyberpunk aesthetics, robots, excessive particles, neon effects, fantasy interfaces, exaggerated AI imagery, generic stock-video styling, or overly dramatic movie-trailer effects.
+
+Do not show real bank logos, payment-network logos, retailer logos, or recognizable third-party brands.
+
+English only.
+
+Never invent readable text.
+
+Only text explicitly specified in the individual scene prompt may be readable.
+
+All other UI text, dashboard labels, numbers and background content must be blurred, obscured, too small to read, or visually indistinct.
+
+Maintain visual continuity between scenes.
+
+Transitions must feel intentional and cinematic so that independently generated clips can be assembled into one continuous film.
+
+The narration is always an off-screen narrator.
+
+No character speaks.
+
+No lip-sync.
+
+No visible dialogue.
+
+Music and narration should feel like one continuous premium product film rather than separate clips.
+```
+
+---
+
+# 3. MASTER CUSTOMER CHARACTER
+
+This character appears only in Act 1.
+
+Use the following exact character definition whenever the customer appears.
+
+```text
+CUSTOMER CONTINUITY CHARACTER:
+
+Male, approximately 32–35 years old, medium build, approachable and relatable appearance, warm natural expression, medium-light skin tone, neatly styled short dark-brown hair, subtle natural facial hair, expressive but understated eyes, realistic everyday professional appearance.
+
+He is attractive in a natural everyday way but must NOT look like a fashion model or commercial actor.
+
+Wardrobe remains identical throughout Act 1:
+charcoal casual-business shirt, dark trousers and a simple premium smartwatch.
+
+No tie.
+No suit.
+No visible corporate branding.
+No jewelry other than the smartwatch.
+
+Personality:
+curious, calm, relatable and naturally expressive.
+
+Facial direction:
+when the face is visible, use only a natural side profile or three-quarter side angle. Never show a fully frontal face. Never look directly into the camera.
+
+Maintain exactly the same:
+face structure,
+hair,
+facial hair,
+skin tone,
+body type,
+clothing,
+watch,
+age,
+and overall appearance
+in every scene where this character appears.
+
+Do not redesign or reinterpret the character between scenes.
+```
+
+---
+
+# 4. MASTER NARRATOR
+
+```text
+NARRATOR:
+
+Male voice, approximately 40–45 years old.
+
+Native American English.
+
+
+Warm, intelligent, confident and calm.
+
+Professional but conversational.
+
+Deep enough to feel authoritative, but natural.
+
+Slightly cinematic but never theatrical.
+
+Never sound like a movie trailer.
+
+Moderate speaking pace with excellent pronunciation.
+
+The narrator should sound like an experienced technology leader explaining an important business opportunity.
+
+Use exactly the same narrator voice throughout the entire film.
+
+Narration must finish before each scene transition.
+
+No narration during the final transition portion of each scene.
+```
+
+---
+
+# 5. MASTER MUSIC
+
+```text
+One continuous premium cinematic technology-launch instrumental score.
+
+No vocals.
+
+No lyrics.
+
+No aggressive trailer drums.
+
+No corporate elevator music.
+
+Start with subtle curiosity and light tension.
+
+Build progressively as the story moves from one customer to millions of conversations.
+
+Become more intelligent and expansive during the AI-ready data transformation.
+
+Become confident and purposeful during the reporting and insight sections.
+
+Finish with a restrained, memorable resolution during the CASA reveal.
+
+Music must continue naturally between scenes so the final video feels like one continuous film.
+```
+
+---
+
+# ACT 1 — THE PROBLEM
+
+## 0–20 SECONDS
+
+---
+
+# SCENE 1 — THE MOMENT
+
+## 0:00–0:07 — 7 seconds
+
+### Purpose
+
+Establish the customer and create an immediate relatable problem.
+
+### TEXT-TO-IMAGE PROMPT
+
+```text
+Use the exact MASTER VISUAL PROMPT and MASTER CUSTOMER CONTINUITY CHARACTER.
+
+Create a realistic premium lifestyle scene.
+
+The same customer is casually using his smartphone while sitting in a modern, comfortable home environment.
+
+Show him from a natural three-quarter side angle with only part of his face visible.
+
+He is looking at his smartphone with genuine interest and anticipation.
+
+He is about to purchase something he wants.
+
+Keep the environment realistic and uncluttered.
+
+Use natural daylight and subtle cinematic depth of field.
+
+The smartphone should be visible clearly enough to establish the purchase interaction, but most interface text must remain blurred and unreadable.
+
+Only one purchase control should be visually prominent.
+
+No logos.
+
+No other readable text.
+```
+
+### GOOGLE FLOW — IMAGE-TO-VIDEO PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT,
+ MASTER CUSTOMER CONTINUITY CHARACTER and MASTER NARRATOR.
+
+Duration exactly 7 seconds.
+
+Begin from the supplied starting image.
+
+The camera makes a subtle cinematic movement toward the customer and smartphone.
+
+The customer naturally moves his thumb toward the purchase control.
+
+At approximately 3 seconds, he taps the purchase control.
+
+The exact readable text on the control is:
+
+BUY NOW
+
+The customer never speaks.
+
+Do not show frontal face.
+
+Maintain exact character continuity.
+
+Narrator:
+
+"It starts with something simple. A customer wants to buy something."
+
+Narration must finish by approximately 5.5 seconds.
+
+From approximately 5.5 to 7 seconds, no narration.
+
+Music continues.
+
+After the tap, immediately begin a subtle camera push toward the smartphone screen.
+
+Prepare the phone to fill the frame for the next scene.
+
+No invented text.
+No random UI text.
+No logos.
+No lip movement.
+```
+
+### EXACT READABLE TEXT
+
+**BUY NOW**
+
+### TRANSITION
+
+Camera pushes directly toward the smartphone.
+
+The phone screen fills the frame.
+
+---
+
+# SCENE 2 — THE QUESTION
+
+## 0:07–0:20 — 13 seconds
+
+This scene deliberately carries the remaining Act 1 story:
+
+**DECLINED → OPEN APP → CHAT → QUESTION**
+
+### TEXT-TO-IMAGE PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT and MASTER CUSTOMER CONTINUITY CHARACTER.
+
+Create a continuation of the previous scene.
+
+The same customer is holding the same smartphone.
+
+Begin with the smartphone prominent in the foreground and the customer visible only in three-quarter side profile.
+
+The phone shows a realistic banking mobile application.
+
+Do not show any bank branding.
+
+The banking interface should look believable and modern.
+
+Almost all interface text must be blurred and unreadable.
+
+The customer has just experienced a declined transaction and is naturally concerned and curious.
+
+His facial expression should be subtle and realistic, not exaggerated.
+
+No frontal face.
+No corporate clothing.
+No other people.
+```
+
+### GOOGLE FLOW — IMAGE-TO-VIDEO PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT, MASTER CUSTOMER CONTINUITY CHARACTER and MASTER NARRATOR.
+
+Duration exactly 13 seconds.
+
+Continue directly from the smartphone filling the frame in Scene 1.
+
+At approximately 0–3 seconds, show the payment state changing to a declined state.
+
+The only readable message is:
+
+CARD DECLINED
+
+At approximately 3–5 seconds, camera pulls back slightly.
+
+The customer looks at the phone with a brief, natural expression of confusion.
+
+At approximately 5–7 seconds, he opens the banking mobile application.
+
+At approximately 7–8.5 seconds, he opens the virtual assistant/chat.
+
+At approximately 8.5–11 seconds, show fast typing in the chat input field.
+
+Type exactly:
+
+Why is my card declined?
+
+At approximately 11 seconds, he sends the message.
+
+The question should be briefly readable.
+
+Do not show a readable assistant response.
+
+Narrator:
+
+"And suddenly, the answer isn't what they expected. So they ask the simplest question: why?"
+
+Narration should finish by approximately 11.5 seconds.
+
+From approximately 11.5 to 13 seconds, no narration.
+
+The sent message bubble should move toward the camera.
+
+The message bubble becomes the transition into Act 2.
+
+No character dialogue.
+No lip-sync.
+No frontal face.
+No random text.
+No invented response.
+```
+
+### EXACT READABLE TEXT
+
+**CARD DECLINED**
+
+**Why is my card declined?**
+
+### TRANSITION
+
+The sent question bubble expands until it fills the entire screen.
+
+---
+
+# ACT 2 — THE SCALE
+
+## 0:20–0:45 — 25 SECONDS
+
+---
+
+# SCENE 3 — ONE → MILLIONS
+
+## 0:20–0:32 — 12 seconds
+
+### Purpose
+
+Move from an individual customer problem to enterprise scale.
+
+### TEXT-TO-IMAGE PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT.
+
+No humans.
+
+Create a premium cinematic visualization of a single customer conversation message suspended in a clean analytical environment.
+
+The single conversation should be visually important in the foreground.
+
+Behind it, subtle additional conversation cards begin to appear.
+
+The design must feel like sophisticated real enterprise data visualization, not science fiction.
+
+Clean dimensional layers.
+Subtle depth.
+Minimal visual clutter.
+
+No readable text except the exact text specified.
+
+No people.
+No faces.
+No logos.
+```
+
+### GOOGLE FLOW — IMAGE-TO-VIDEO PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT and MASTER NARRATOR.
+
+Duration exactly 12 seconds.
+
+Begin with the single conversation message from Scene 2.
+
+The camera slowly pulls backward.
+
+The single conversation duplicates into multiple conversations.
+
+The number of conversations rapidly increases.
+
+The visual scale grows from one conversation to hundreds, thousands and finally an immense field representing millions of conversations.
+
+Do not literally render millions of individual cards if that causes visual clutter. Use controlled density and depth to communicate scale.
+
+Show:
+
+ONE CONVERSATION
+
+Then transition to:
+
+MILLIONS OF CONVERSATIONS
+
+These are the only readable words.
+
+Narrator:
+
+"But one question is never just one question."
+
+Finish narration by approximately 5 seconds.
+
+Then:
+
+"Across millions of conversations, every interaction carries a signal."
+
+Finish narration by approximately 9.5 seconds.
+
+From approximately 9.5 to 12 seconds, no narration.
+
+The millions of conversations begin flowing together toward a common analytical layer.
+
+No humans.
+No random text.
+No futuristic holograms.
+```
+
+### EXACT READABLE TEXT
+
+**ONE CONVERSATION**
+
+**MILLIONS OF CONVERSATIONS**
+
+### TRANSITION
+
+Millions of conversation cards flow into one structured analytical stream.
+
+---
+
+# SCENE 4 — AI-READY DATA
+
+## 0:32–0:45 — 13 seconds
+
+### Purpose
+
+Show CASA's core transformation: conversations becoming an AI-ready data product.
+
+### TEXT-TO-IMAGE PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT.
+
+No humans.
+
+Create a sophisticated enterprise data transformation visualization.
+
+Millions of conversation records enter from one side as raw conversation objects.
+
+As they move through the center, they become structured AI-ready information.
+
+Show a small number of clearly understandable attributes emerging from the raw conversations.
+
+The visual should feel like a real enterprise AI data product, not a futuristic AI fantasy.
+
+The final state should be a clean, organized, high-value data layer.
+
+Only specified labels may be readable.
+
+No random text.
+No people.
+No faces.
+```
+
+### GOOGLE FLOW — IMAGE-TO-VIDEO PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT and MASTER NARRATOR.
+
+Duration exactly 13 seconds.
+
+Begin with the conversation stream from Scene 3.
+
+Move the camera through the conversation data.
+
+Raw conversation objects progressively transform into structured AI-ready records.
+
+Show only these readable attributes:
+
+INTENT
+SENTIMENT
+SUMMARY
+OUTCOME
+TRACEABILITY
+
+Do not show additional readable fields.
+
+The attributes should appear naturally as the raw conversations are enriched.
+
+At approximately 8 seconds, the individual enriched records consolidate into one powerful data product representation.
+
+Display:
+
+AI-READY DATA
+
+Narrator:
+
+"AI turns those raw interactions into ready-to-use intelligence — structured, enriched and traceable."
+
+Narration must finish by approximately 10 seconds.
+
+From 10 to 13 seconds, no narration.
+
+The AI-ready data layer should begin flowing toward a reporting environment.
+
+No humans.
+No random text.
+No invented metrics.
+```
+
+### EXACT READABLE TEXT
+
+**INTENT**
+
+**SENTIMENT**
+
+**SUMMARY**
+
+**OUTCOME**
+
+**TRACEABILITY**
+
+**AI-READY DATA**
+
+### TRANSITION
+
+AI-ready data flows into reporting.
+
+---
+
+# ACT 3 — THE INTELLIGENCE
+
+## 0:45–1:05 — 20 SECONDS
+
+---
+
+# SCENE 5 — REPORTING & MONITORING
+
+## 0:45–0:55 — 10 seconds
+
+### Purpose
+
+Demonstrate the first business-facing layer without turning this into a dashboard tutorial.
+
+### TEXT-TO-IMAGE PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT.
+
+No humans.
+
+Create a premium realistic enterprise analytics reporting environment.
+
+The screen should look like a sophisticated internal banking analytics product.
+
+Show a small number of clean analytical visualizations:
+
+trend line,
+conversation volume,
+emerging themes,
+intent distribution,
+handoff pattern.
+
+The dashboard must be visually elegant and restrained.
+
+Most labels and values must be blurred or unreadable.
+
+Only the explicitly specified labels should be readable.
+
+Do not make the screen look overloaded.
+
+No faces.
+No people.
+No logos.
+```
+
+### GOOGLE FLOW — IMAGE-TO-VIDEO PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT and MASTER NARRATOR.
+
+Duration exactly 10 seconds.
+
+Begin with AI-ready data flowing into the reporting interface.
+
+Camera moves smoothly across the analytical view.
+
+Show several visual patterns forming:
+
+conversation trends,
+emerging themes,
+intent,
+handoff activity.
+
+The following exact text may be readable:
+
+REPORTING & MONITORING
+
+EMERGING THEMES
+
+INTENT
+
+HANDOFF
+
+Do not show readable numbers.
+
+Do not invent percentages.
+
+Do not show additional readable labels.
+
+Narrator:
+
+"Now the intelligence becomes visible — revealing patterns, themes and customer signals."
+
+Finish narration by approximately 7 seconds.
+
+From 7 to 10 seconds, no narration.
+
+During the final seconds, the camera moves toward the natural-language exploration area of the application.
+
+No people.
+No random text.
+No invented metrics.
+```
+
+### EXACT READABLE TEXT
+
+**REPORTING & MONITORING**
+
+**EMERGING THEMES**
+
+**INTENT**
+
+**HANDOFF**
+
+### TRANSITION
+
+Camera moves from the reporting visualization directly into the application's natural-language question area.
+
+---
+
+# SCENE 6 — ASK THE QUESTION
+
+## 0:55–1:05 — 10 seconds
+
+### Purpose
+
+This is the Streamlit demonstration and the setup for the insight.
+
+### TEXT-TO-IMAGE PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT.
+
+No humans.
+
+Create a realistic sophisticated Streamlit analytics application shown on a large laptop or application screen.
+
+The screen contains a clean conversational analytics interface.
+
+A prominent natural-language chat input box is visible.
+
+Most existing interface content is blurred or unreadable.
+
+The interface should look like a real internal analytics application, not a generic chatbot.
+
+Do not show any human.
+Do not show a face.
+No logos.
+
+The question input field must be visually prominent.
+```
+
+### GOOGLE FLOW — IMAGE-TO-VIDEO PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT and MASTER NARRATOR.
+
+Duration exactly 10 seconds.
+
+Start with the Streamlit analytics application.
+
+At approximately 1 second, the cursor enters the natural-language input field.
+
+Immediately begin very fast but believable typing.
+
+Type exactly:
+
+What is driving declined transaction contacts?
+
+The typing should complete by approximately 4 seconds.
+
+The user presses Enter.
+
+The application processes the question quickly.
+
+At approximately 5.5 seconds, a response appears.
+
+CRITICAL:
+
+The response must be intentionally blurred and unreadable.
+
+Do not allow the viewer to read the response.
+
+Do not generate any readable numbers.
+
+Do not generate any invented answer text.
+
+Keep the response visible for less than one second.
+
+At approximately 6.5 seconds, the camera rapidly pushes through the blurred response.
+
+The blurred response transforms into a clean analytical insight.
+
+The only readable insight that emerges is:
+
+BILLING ADDRESS MISMATCH
+
+Narrator:
+
+"Ask the question — and the signal becomes clear."
+
+Narration finishes by approximately 7.5 seconds.
+
+From 7.5 to 10 seconds, no narration.
+
+Hold the BILLING ADDRESS MISMATCH insight clearly.
+
+No human.
+No face.
+No random text.
+No visible response content.
+```
+
+### EXACT READABLE TEXT
+
+**What is driving declined transaction contacts?**
+
+Then:
+
+**BILLING ADDRESS MISMATCH**
+
+### CRITICAL VISUAL MOMENT
+
+The viewer must experience:
+
+**QUESTION**
+
+→
+
+**BLURRED ANSWER**
+
+→
+
+# **BILLING ADDRESS MISMATCH**
+
+Do not let them read the generated response.
+
+This is intentional.
+
+### TRANSITION
+
+The BILLING ADDRESS MISMATCH insight expands and becomes three connected capability pillars.
+
+---
+
+# ACT 4 — THE PRODUCT
+
+## 0:65–0:80 — 15 SECONDS
+
+---
+
+# SCENE 7 — ENRICH / MONITOR / EXPLORE
+
+## 1:05–1:12 — 7 seconds
+
+### Purpose
+
+Rapidly communicate the product's three pillars.
+
+### TEXT-TO-IMAGE PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT.
+
+No humans.
+
+Create a premium minimal enterprise technology composition.
+
+The BILLING ADDRESS MISMATCH insight has transformed into three connected capability pillars.
+
+The design should be extremely clean and cinematic.
+
+Three capability areas should be visually distinct but connected.
+
+No people.
+No faces.
+No logos.
+No unnecessary interface elements.
+
+Only the specified words may be readable.
+```
+
+### GOOGLE FLOW — IMAGE-TO-VIDEO PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT and MASTER NARRATOR.
+
+Duration exactly 7 seconds.
+
+Begin with BILLING ADDRESS MISMATCH.
+
+The insight separates into three connected pillars.
+
+Reveal rapidly but elegantly:
+
+ENRICH
+
+MONITOR
+
+EXPLORE
+
+Then reveal their supporting descriptions:
+
+AI DATA ENRICHMENT
+
+REPORTING & MONITORING
+
+NATURAL LANGUAGE
+
+Keep typography large, clean and readable.
+
+Do not show additional text.
+
+Narrator:
+
+"Enrich. Monitor. Explore."
+
+Finish narration by approximately 3 seconds.
+
+From 3 to 7 seconds, no narration.
+
+The three pillars converge toward the center.
+
+Prepare for the final CASA reveal.
+
+No humans.
+No random text.
+```
+
+### EXACT READABLE TEXT
+
+**ENRICH**
+
+**AI DATA ENRICHMENT**
+
+**MONITOR**
+
+**REPORTING & MONITORING**
+
+**EXPLORE**
+
+**NATURAL LANGUAGE**
+
+### TRANSITION
+
+The three pillars converge into one central point.
+
+---
+
+# SCENE 8 — CASA
+
+## 1:12–1:20 — 8 seconds
+
+### Purpose
+
+Final product reveal.
+
+Nothing else should compete with it.
+
+### TEXT-TO-IMAGE PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT.
+
+No humans.
+
+Create an elegant premium final product-launch frame.
+
+Minimal sophisticated background.
+
+A subtle visual representation of conversations transforming into intelligence and intelligence transforming into action.
+
+The composition must have substantial negative space.
+
+The CASA brand reveal should be the visual focus.
+
+No other logos.
+No people.
+No faces.
+No unnecessary interface elements.
+
+The final typography must be extremely clean and perfectly readable.
+
+Only the exact specified text may be readable.
+```
+
+### GOOGLE FLOW — IMAGE-TO-VIDEO PROMPT
+
+```text
+Use the MASTER VISUAL PROMPT and MASTER NARRATOR.
+
+Duration exactly 8 seconds.
+
+Begin from the converged point created at the end of Scene 7.
+
+The central visual subtly transforms from conversation signals into structured intelligence and then into a clean actionable signal.
+
+At approximately 2 seconds, reveal:
+
+CASA
+
+Then reveal beneath it:
+
+Conversational Agentic System for Analytics
+
+Then reveal:
+
+FROM CONVERSATIONS TO INTELLIGENCE.
+
+Then:
+
+FROM INTELLIGENCE TO ACTION.
+
+Keep the final composition extremely clean.
+
+Do not add any other text.
+
+Narrator:
+
+"CASA. Conversational Agentic System for Analytics. From conversations to intelligence. From intelligence to action."
+
+Narration should finish by approximately 6.5 seconds.
+
+From approximately 6.5 to 8 seconds, no narration.
+
+Music reaches a confident but restrained final resolution.
+
+Hold the CASA identity cleanly until the end.
+
+No humans.
+No faces.
+No random text.
+No additional animation after the final composition settles.
+```
+
+### EXACT READABLE TEXT
+
+# CASA
+
+**Conversational Agentic System for Analytics**
+
+**FROM CONVERSATIONS TO INTELLIGENCE.**
+
+**FROM INTELLIGENCE TO ACTION.**
+
+### FINAL FRAME
+
+Hold CASA for the final 1.5–2 seconds.
+
+---
+
+# 6. COMPLETE 80-SECOND NARRATION
+
+Use this as the master voice reference.
+
+### 0:00–0:07
+
+> “It starts with something simple. A customer wants to buy something.”
+
+### 0:07–0:20
+
+> “And suddenly, the answer isn't what they expected. So they ask the simplest question: why?”
+
+### 0:20–0:32
+
+> “But one question is never just one question. Across millions of conversations, every interaction carries a signal.”
+
+### 0:32–0:45
+
+> “AI turns those raw interactions into ready-to-use intelligence — structured, enriched and traceable.”
+
+### 0:45–0:55
+
+> “Now the intelligence becomes visible — revealing patterns, themes and customer signals.”
+
+### 0:55–1:05
+
+> “Ask the question — and the signal becomes clear.”
+
+### 1:05–1:12
+
+> “Enrich. Monitor. Explore.”
+
+### 1:12–1:20
+
+> “CASA. Conversational Agentic System for Analytics. From conversations to intelligence. From intelligence to action.”
+
+---
+
+# 7. EXACT STORY FLOW
+
+The complete film should visually communicate this:
+
+```text
+CUSTOMER
+   ↓
+PURCHASE
+   ↓
+CARD DECLINED
+   ↓
+OPEN MOBILE APP
+   ↓
+START CHAT
+   ↓
+"WHY IS MY CARD DECLINED?"
+   ↓
+ONE CONVERSATION
+   ↓
+MILLIONS OF CONVERSATIONS
+   ↓
+AI-READY DATA
+   ↓
+REPORTING & MONITORING
+   ↓
+NATURAL-LANGUAGE QUESTION
+   ↓
+BILLING ADDRESS MISMATCH
+   ↓
+ENRICH
+MONITOR
+EXPLORE
+   ↓
+CASA
+   ↓
+FROM CONVERSATIONS TO INTELLIGENCE.
+FROM INTELLIGENCE TO ACTION.
+```
+
+---
+
+# 8. WHAT MUST NOT APPEAR
+
+These are hard constraints.
+
+### Human-related
+
+* No humans after Act 1
+* No executive
+* No product owner face
+* No boardroom
+* No suit
+* No talking person
+* No lip-sync
+* No character dialogue
+
+### Visual
+
+* No cyberpunk
+* No robots
+* No giant holograms
+* No excessive particles
+* No sci-fi data tunnels
+* No generic stock imagery
+* No overly dark corporate aesthetic
+* No excessive animation
+
+### Text
+
+* No random words
+* No fake numbers
+* No fake statistics
+* No invented banking information
+* No non-English text
+* No pseudo-language
+* No readable dashboard content unless explicitly specified
+
+### Product
+
+* Do not reveal **CASA** before Scene 8.
+* Do not show a fake CASA logo before the final scene.
+* Do not introduce unnecessary product features.
+* Do not turn the video into a software tutorial.
+
+---
+
+# 9. MOST IMPORTANT STREAMLIT RULE
+
+The Streamlit scene must be treated as a **cinematic moment**, not a screen recording.
+
+The audience should perceive:
+
+**QUESTION → SYSTEM THINKS → ANSWER → INSIGHT**
+
+not:
+
+**QUESTION → READ A LONG AI RESPONSE**
+
+Therefore:
+
+### Visible
+
+**What is driving declined transaction contacts?**
+
+↓
+
+brief processing
+
+↓
+
+**blurred response**
+
+↓
+
+# **BILLING ADDRESS MISMATCH**
+
+The response itself is intentionally unreadable.
+
+This makes the reveal faster and more impactful.
+
+---
+
+# 10. TRANSITION DESIGN
+
+The eight scenes must not feel like eight unrelated AI generations.
+
+Use these transition relationships:
+
+### Scene 1 → Scene 2
+
+**BUY NOW → phone fills frame → CARD DECLINED**
+
+### Scene 2 → Scene 3
+
+**CARD DECLINED → mobile banking app → chat**
+
+### Scene 3 → Scene 4
+
+**Question bubble → duplicates → millions**
+
+### Scene 4 → Scene 5
+
+**Millions of conversations → structured AI-ready data → reporting**
+
+### Scene 5 → Scene 6
+
+**Dashboard signal → natural-language input**
+
+### Scene 6 → Scene 7
+
+**Blurred answer → BILLING ADDRESS MISMATCH → three pillars**
+
+### Scene 7 → Scene 8
+
+**ENRICH + MONITOR + EXPLORE → convergence → CASA**
+
+---
+
+# 11. FINAL CREATIVE PRINCIPLE
+
+The film is not saying:
+
+> “Here are all the features of our application.”
+
+It is saying:
+
+> **A customer conversation contains a signal. CASA turns millions of those signals into intelligence that a business can understand, explore and act on.**
+
+The viewer should leave with exactly three ideas:
+
+### 1.
+
+**Conversations are valuable data.**
+
+### 2.
+
+**AI can turn them into actionable intelligence.**
+
+### 3.
+
+**CASA makes that intelligence usable.**
+
+That is the entire pitch.
