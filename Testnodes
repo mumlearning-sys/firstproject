@@ -1,0 +1,185 @@
+Here is the complete, master engineering prompt incorporating all specifications, data architectures, UI constraints, realistic banking customer behaviors, and JSON schema guidelines discussed.
+Master Engineering Prompt: "Agent Journey Analytics" Page Integration
+1. Objective & Overview
+Add a new high-fidelity analytics page/tab titled "Agent Journey Analytics" to our existing enterprise AI banking dashboard prototype.
+The goal of this page is to give analytics and AI product teams deep visibility into how banking AI agents (such as Sierra AI) perform in production across 10,000+ customer conversations over a 7-day period.
+2. Design System & Styling Guidelines
+The new page must seamlessly match the aesthetic, typography, and component styling of our existing dashboard prototype:
+ * Background: Clean white (#FFFFFF) with light slate/grey background canvas (#F8FAFC).
+ * Borders & Cards: Subtle grey/slate borders (#E2E8F0), rounded corners (rounded-xl), crisp drop shadows (shadow-sm).
+ * Color Palette & Accents:
+   * Primary Navy: #0F172A (Headers, primary actions, modal tops)
+   * Teal/Cyan Accents: #0D9488 / #0EA5E9 (Active selection rings, metrics, navigation highlights)
+   * Success Path (Green): #10B981 / #ECFDF5
+   * Friction / Drop-off (Amber/Orange): #F59E0B / #FFFBEB
+   * Normal Core Processing (Blue): #2563EB / #EFF6FF
+   * Intent Drift / Loopback (Purple): #9333EA / #FAF5FF
+ * Typography: Inter font family, high contrast, clean scannability, precise numeric hierarchy.
+3. Data Architecture: External Mock JSON Fetching
+ * Strict Constraint: No hardcoded graph data or metrics inside the HTML/JS frontend code.
+ * On page load, the application must fetch data via async/await fetch() from an external file located at /data/agent_journey_mock.json.
+ * Why: This mirrors our production architecture, where an automated daily job (e.g., Snowflake / Airflow) exports pre-aggregated conversation telemetry directly to a static cloud storage bucket (AWS S3 / GCS).
+ * Filter changes (Date Range, Agent Version, Channel) should simulate re-fetching or filtering this JSON dataset dynamically.
+4. Realistic Banking Customer Behaviors (Graph Node Specs)
+The graph data must represent messy, non-linear, multi-intent customer behavior rather than a simple 4-box flowchart:
+ * Vague Utterance & Disambiguation Loop: Customer says "My card isn't working" \rightarrow Agent triggers a Disambiguation Node (Credit vs. Debit card?) \rightarrow Customer clarifies.
+ * Mid-Flow Intent Drift: Customer starts reviewing transactions, suddenly asks "What are your new 30-year home loan interest rates?", receives an FAQ response, and then loops back to resume transaction review or account summary.
+ * Verification Friction & Failures: OTP SMS challenge timeouts, identity verification failures, or voice OTP retry paths.
+ * Guardrail Interventions & Hallucination Control: Agent attempts an unauthorized fee waiver \rightarrow Guardrail catches it mid-flight \rightarrow Corrects to standard policy answer.
+ * Multi-Journey Outcomes:
+   * Successful Completion (e.g., Replacement card dispatched).
+   * Escalation / Transfer to Human Agent (High-value dispute or complex loan query).
+   * Companion App Navigation Drift (Customer directed to mobile app for credit score checks).
+   * Abandoned / Unresolved drop-off.
+5. UI Layout & Component Architecture
+A. Header, Global Filters & KPI Cards
+ * Scenario / Agent Switcher: Dropdown supporting 5 distinct journeys (Card Replacement & Fraud Freeze, Account Summary & Intent Drift, Digital KYC Origination, Monthly Statement Snapshots, Dispute Escalation).
+ * Global Filter Pills: Date Range (Last 7 Days), Agent Version (v2.4.1-prod), Channel (Omnichannel / App / IVR / WhatsApp).
+ * Top KPI Cards:
+   * Conversations Started: 10,000
+   * Journey Completion Rate: 68.4%
+   * Human Handoff Rate: 12.6%
+   * Unresolved / Abandoned Rate: 9.8%
+B. Central Interactive Journey Map (SVG Canvas)
+ * Left-to-right directed graph rendered via SVG Bezier curves (<path d="M... C..." />).
+ * Arrow thickness scales proportionally with conversation volume.
+ * Curved loopback dashed lines for Intent Drifts and Context Switches.
+ * Every node displays: Node Title, Subtitle/Type, Unique Count, and Step Percentage.
+ * Interactivity: Clicking any node highlights it on the canvas with a glow border and immediately updates the Right-Side Inspection Drawer.
+C. Right-Side Node Inspection Drawer (4-Tab Interface)
+When a node is selected, populate the right-hand panel with:
+ * Overview Tab: Unique Conversations, Reach Rate %, Median Dwell Time (sec), Execution Error Rate %, and Outgoing Branch Distribution breakdown.
+ * Transcripts & Sessions Tab: Searchable list of session IDs passing through that node. Clicking any session opens a modal dialog showing the turn-by-turn chat transcript with expandable tool execution badges (e.g., call_verify_otp(), call_get_transactions(), call_fetch_rates()).
+ * Execution Traces Tab: Step-by-step latency waterfall breakdown (Prompt Guardrails \rightarrow Vector Search \rightarrow LLM Inference \rightarrow API Execution) and raw JSON payload viewer.
+ * Friction AI Tab: AI-generated root-cause diagnostics explaining why drop-offs or handoffs occurred at that step, with recommended prompt engineering fixes.
+6. Mock Data Schema & Data Generation Specification
+Create the mock JSON file under /data/agent_journey_mock.json adhering strictly to the schema below:
+JSON Schema Specification (/data/agent_journey_mock.json)
+{
+  "metadata": {
+    "agentName": "Sierra AI Banking Agent",
+    "agentVersion": "v2.4.1-prod",
+    "dateRange": "Last 7 Days",
+    "totalConversations": 10000,
+    "lastRefreshed": "2026-10-15T02:00:00Z"
+  },
+  "globalKPIs": {
+    "conversationsStarted": 10000,
+    "journeyCompletionRate": 68.4,
+    "humanHandoffRate": 12.6,
+    "unresolvedRate": 9.8,
+    "avgSessionDurationSec": 84
+  },
+  "nodes": [
+    {
+      "id": "node_start",
+      "name": "Start / Session Init",
+      "type": "Entry Point",
+      "status": "neutral",
+      "metrics": {
+        "count": 10000,
+        "reachRate": "100%",
+        "medianTimeSec": 2,
+        "errorRate": "0.1%"
+      },
+      "outgoingBranches": [
+        { "targetNodeId": "node_vague_intent", "count": 2500, "pct": "25.0%", "label": "Ambiguous Phrase" },
+        { "targetNodeId": "node_identify_intent", "count": 7500, "pct": "75.0%", "label": "Clear Intent" }
+      ]
+    },
+    {
+      "id": "node_vague_intent",
+      "name": "Vague Utterance (\"Card not working\")",
+      "type": "Disambiguation Node",
+      "status": "amber",
+      "metrics": {
+        "count": 2500,
+        "reachRate": "25.0%",
+        "medianTimeSec": 12,
+        "errorRate": "1.4%"
+      },
+      "outgoingBranches": [
+        { "targetNodeId": "node_card_replacement", "count": 1800, "pct": "72.0%", "label": "Debit/Credit Block" },
+        { "targetNodeId": "node_app_navigation", "count": 700, "pct": "28.0%", "label": "App Issue / FAQ" }
+      ]
+    },
+    {
+      "id": "node_intent_drift_faq",
+      "name": "Intent Drift: Rate / FAQ Inquiry",
+      "type": "Context Switch",
+      "status": "purple",
+      "metrics": {
+        "count": 2200,
+        "reachRate": "22.0%",
+        "medianTimeSec": 15,
+        "errorRate": "0.8%"
+      },
+      "outgoingBranches": [
+        { "targetNodeId": "node_resume_original", "count": 1900, "pct": "86.4%", "label": "Loopback to Summary" },
+        { "targetNodeId": "node_human_handoff", "count": 300, "pct": "13.6%", "label": "Complex Loan Escalation" }
+      ]
+    }
+  ],
+  "sampleSessions": [
+    {
+      "sessionId": "20261015-8821-4902",
+      "associatedNodeIds": ["node_start", "node_vague_intent", "node_intent_drift_faq", "node_resume_original"],
+      "outcome": "Completed with Drift",
+      "durationSec": 112,
+      "transcript": [
+        {
+          "speaker": "user",
+          "text": "Hey, my card isn't working and I don't know why."
+        },
+        {
+          "speaker": "agent",
+          "text": "I can help with that! Is this regarding your Sapphire Visa Debit Card or your Preferred Credit Card?",
+          "toolCall": {
+            "name": "call_disambiguate_accounts",
+            "params": { "userId": "usr_9918" },
+            "status": "SUCCESS"
+          }
+        },
+        {
+          "speaker": "user",
+          "text": "The debit card. Actually wait, before that, what's your current 30-year mortgage rate?"
+        },
+        {
+          "speaker": "agent",
+          "text": "Our current fixed 30-year home loan rate is 6.25% APR. Would you like me to send an info pack, or shall we get back to unblocking your debit card?",
+          "toolCall": {
+            "name": "call_fetch_rates_catalog",
+            "params": { "product": "mortgage_30yr" },
+            "status": "SUCCESS"
+          },
+          "isDriftBadge": true
+        },
+        {
+          "speaker": "user",
+          "text": "Let's unblock the debit card first."
+        }
+      ],
+      "trace": {
+        "traceId": "tr_88214902_sf",
+        "totalLatencyMs": 380,
+        "steps": [
+          { "name": "Guardrail Policy Validation", "latencyMs": 32, "status": "PASS" },
+          { "name": "Intent & Disambiguation Parser", "latencyMs": 110, "status": "PASS" },
+          { "name": "Rates DB Retrieval", "latencyMs": 88, "status": "PASS" },
+          { "name": "LLM Response Generation", "latencyMs": 150, "status": "PASS" }
+        ]
+      },
+      "frictionDiagnostics": {
+        "hasFriction": true,
+        "category": "Mid-Flow Context Switch",
+        "description": "User requested rate information mid-way through card issue diagnosis. Agent successfully answered FAQ and navigated user back to primary workflow.",
+        "recommendedAction": "Add quick-reply chips for 'Return to Card Unblock' to reduce dwell time by ~4s."
+      }
+    }
+  ]
+}
+
+7. Technical Implementation Requirements
+ * Stack: Vanilla HTML5, Tailwind CSS via CDN, FontAwesome 6 for icons, and ES6 JavaScript (async/await fetch).
+ * Clean Code Structure: Keep frontend JavaScript logic modular (fetchData(), renderKPIs(), renderSVGGraph(), bindNodeClickEvents(), updateDrawer(), openTranscriptModal()).
+ * Error Handling: Include fallback states if /data/agent_journey_mock.json fails to load or takes longer to fetch.
